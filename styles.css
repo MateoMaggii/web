@@ -1,0 +1,170 @@
+body {
+    margin: 0px;
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    color: #fff;
+    background-image: linear-gradient(
+        320deg,
+        hsl(42deg 82% 40%) 0%,
+        hsl(41deg 77% 35%) 4%,
+        hsl(40deg 73% 30%) 9%,
+        hsl(40deg 68% 25%) 13%,
+        hsl(39deg 63% 21%) 17%,
+        hsl(38deg 57% 16%) 22%,
+        hsl(38deg 51% 11%) 26%,
+        hsl(38deg 59% 6%) 30%,
+        hsl(339deg 0% 0%) 35%,
+        hsl(339deg 0% 0%) 39%,
+        hsl(339deg 0% 0%) 43%,
+        hsl(339deg 0% 0%) 48%,
+        hsl(339deg 0% 0%) 52%,
+        hsl(339deg 0% 0%) 57%,
+        hsl(339deg 0% 0%) 61%,
+        hsl(339deg 0% 0%) 65%,
+        hsl(38deg 59% 6%) 70%,
+        hsl(38deg 51% 11%) 74%,
+        hsl(38deg 57% 16%) 78%,
+        hsl(39deg 63% 21%) 83%,
+        hsl(40deg 68% 25%) 87%,
+        hsl(40deg 73% 30%) 91%,
+        hsl(41deg 77% 35%) 96%,
+        hsl(42deg 82% 40%) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background: transparent;
+    background-color: #000a;
+    color: #fff;
+    padding: 0.5em;
+    text-align: center;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.logo-nombre {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    margin: 0;
+}
+
+.logo img {
+    width: 8vw; 
+    max-width: 80px; 
+    height: auto; 
+    margin-right: 10px;
+}
+
+/* Titulos */
+h1 {
+    font-size: 3.5vw; 
+    text-align: center;
+    margin: 1em 0; 
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5vw;
+}  
+
+span {
+    color: #B88512;
+}
+
+/* Contenedor del video*/
+.video_youtube {
+    position: relative;
+    padding-bottom: 70%;
+    padding-top: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.video_youtube iframe {
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+}
+
+/* Contenedor principal y secundario */
+.container__principal, .container__secundario {
+    margin: 0 10%;
+    scrollbar-width: 0;
+}
+
+.container__secundario h2 {
+    margin-top: 0;
+    margin-bottom: 1.5em;
+}
+
+/* Footer */
+.div1 {
+    width: 100%;
+    height: auto;
+    text-align: center; 
+    padding: 1em; 
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    padding: 0; 
+    margin-top: 4em;
+    text-align: center; 
+}
+
+footer img {
+    width: 17vw;
+    max-width: 6em;
+    height: auto;
+    margin: 0.5em; 
+}
+
+footer p {
+    margin: 0.5em;
+}
+
+/* Media Queries (diseño responsive) */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 5vw; /* Ajustamos el tamaño del título para pantallas más pequeñas */
+    }
+
+    h2 {
+        font-size: 4vw;
+    }
+
+    .logo img {
+        width: 8vw; /* Redimensino el logo para pantallas más pequeñas */
+    }
+
+    video {
+        width: 100%; /* El video ocupa todo el ancho del contenedor en pantallas más pequeñas */
+        height: auto; /* Mantengo la proporción de aspecto */
+    }
+    
+    footer {
+        width: 100%;
+        padding: 0.1em;
+    }
+}
+
